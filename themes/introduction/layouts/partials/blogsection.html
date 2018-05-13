@@ -1,0 +1,34 @@
+<div class="container"><!-- Begin Blog container -->
+
+{{ if .Site.Params.showLatest }}
+<h2 class="title is-2 has-text-centered">最近更新</h2>
+    {{ range first 1 (where .Data.Pages.ByPublishDate.Reverse "Section" "blog") }}
+    <div class="summary">
+        {{ .Date.Format (.Site.Params.dateForm | default "Jan 02, 2006") }}
+        <h3 class="title is-3 latest-post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <div class="markdown">
+            {{ .Summary }}
+            {{ if .Truncated }}
+            <a href="{{ .RelPermalink }}">...阅读全部</a>
+            {{ end }}
+            </div>
+    </div>
+    {{ end }}
+{{ end }}
+
+{{ if .Site.Params.showAllPosts }}
+<h2 class="title is-2 has-text-centered top-pad">全部笔记</h2>
+    <ul>
+    {{ range .Data.Pages.ByPublishDate.Reverse }}
+        {{ if eq .Section "blog" }}
+            {{ partial "li.html" . }}
+        {{ end }}
+    {{ end }}
+    </ul>
+{{ else }}
+<div class="container has-text-centered top-pad"><a href="/blog">全部笔记</a></div>
+{{ end }}
+
+</div><!-- End Blog container -->
+
+<div class="container has-text-centered top-pad"><a href="#top"><i class="fa fa-arrow-up"></i></a></div>
