@@ -56,7 +56,19 @@
 <link rel="shortcut icon" href="{{ .Site.Params.faviconFile | default "img/favicon.ico" }}">
 
 <!-- Google Analytics -->
-{{ template "_internal/google_analytics_async.html" . }}
+<!-- {{ template "_internal/google_analytics_async.html" . }} -->
+
+{{ if .Site.GoogleAnalytics }}
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?{{ .Site.GoogleAnalytics }}";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+{{end}}
 
 <!-- RSS -->
 {{ if .RSSLink }}

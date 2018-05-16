@@ -1,12 +1,13 @@
-baseurl                 = "https://hustlong.github.io/"   # Your domain name. Must end with "/"
+baseurl                 = "/"   # Your domain name. Must end with "/"
 languageCode            = "zh-CN"
 title                   = "龙大侠"
 theme                   = "introduction"
 enforce_ssl             = false
 builddrafts             = false                             # Include pages with draft status of true
-canonifyurls            = true                              # Turns relative urls into absolute urls
+canonifyURLs = true
+# canonifyurls            = true                              # Turns relative urls into absolute urls
 # disqusshortname       = "xxx"                             # Enable Disqus for comments
-# googleAnalytics       = "xxx"
+googleAnalytics       = "af16f5c4c7a8e8929ed5fab578dc947d"
 
 [params]
     blogHead            = "BigLong.Top"                            # Full name shows on blog post pages
@@ -14,7 +15,7 @@ canonifyurls            = true                              # Turns relative url
     tagLine             = "重新出发"           # Appears after the introduction
     introHeight         = "fullheight"                           # Input either 'medium' or 'large' or 'fullheight'
     themeStyle          = "light"                           # Choose 'light' or 'dark'
-    avatar              = "img/profile.jpg"                 # Path to image in static folder eg. img/avatar.png, or comment out to remove
+    # avatar              = "img/profile.jpg"                 # Path to image in static folder eg. img/avatar.png, or comment out to remove
     email               = "long@hust.edu.cn"             # Shows in contact section, or leave blank to omit
     localTime           = true                              # Show your current local time in contact section
     timeZone            = "Asia/Shanghai"             # Your timezone as in the TZ* column of this list: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -23,8 +24,9 @@ canonifyurls            = true                              # Turns relative url
     cacheBuster         = false                             # Add the current unix timestamp in query string for cache busting css assets (relevant in development mode)
     description         = "记录生活"             # Max 160 characters show in search results
     faviconFile         = "img/biglong.ico"
-    pygmentsStyle       = "monokai"                         # https://help.farbox.com/pygments.html
-    pygmentsCodefences  = true
+    # pygmentsStyle       = "monokai"                         # https://help.farbox.com/pygments.html
+    # pygmentsCodeFences  = true
+    # pygmentsUseClasses  = true
     footerText          = "皖ICP备18009137号  BIGLONG.TOP © 2018-2019"                                # Text to show in footer (overrides default text)
     fadeIn              = false                              # Turn on/off the fade-in effect
     customCSS           = []                                # Include custom css files e.g. ["css/foo.css", "css/bar.css"]
