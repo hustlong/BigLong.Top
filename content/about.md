@@ -12,4 +12,4 @@ date: 2017-03-09T13:19:25+08:00
 ##### 我的朋友
 
 * [粥一(交互设计师)](https://www.nixiaoyu.cn/)
-* [Leridy(前端工程师)](http://www.leridy.pw/blog/)
+* [Leridy(前端工程师)](http://www.leridy.pw/)
