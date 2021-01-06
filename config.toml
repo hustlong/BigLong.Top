@@ -27,7 +27,7 @@ googleAnalytics       = "af16f5c4c7a8e8929ed5fab578dc947d"
     # pygmentsStyle       = "monokai"                         # https://help.farbox.com/pygments.html
     # pygmentsCodeFences  = true
     # pygmentsUseClasses  = true
-    footerText          = "皖ICP备18009137号  BIGLONG.TOP © 2019-2020"                                # Text to show in footer (overrides default text)
+#    footerText          = '[]()'                                # Text to show in footer (overrides default text)
     fadeIn              = false                              # Turn on/off the fade-in effect
     customCSS           = []                                # Include custom css files e.g. ["css/foo.css", "css/bar.css"]
 
@@ -59,3 +59,7 @@ googleAnalytics       = "af16f5c4c7a8e8929ed5fab578dc947d"
 #[[params.social]]
 #    url = "https://linkedin.com/"
 #    icon = "linkedin"
+
+[params.footer]
+    url = 'http://beian.miit.gov.cn'
+    title = '皖ICP备18009137号  BIGLONG.TOP © 2021'

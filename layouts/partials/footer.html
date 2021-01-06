@@ -1,0 +1,14 @@
+<div class="section" id="footer"><!-- Begin Footer section -->
+    <div class="container has-text-centered"><!-- Begin Footer container -->
+        {{ if .Site.Params.footerText }}
+            {{ .Site.Params.footerText }}
+        {{ else }}
+        <span class="footer-text">
+            <a href="https://beian.miit.gov.cn" target="_blank" rel="noopener">
+                皖ICP备18009137号
+            </a> 
+            BIGLONG.TOP © {{ now.Format "2006" }}
+        </span>
+        {{ end }}
+    </div><!-- End Footer container -->
+</div><!-- End Footer section -->
